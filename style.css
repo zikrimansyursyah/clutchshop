@@ -12,16 +12,32 @@
     cursor: pointer;
     border: none;
     border-radius: 10px;
+    background-color: #ececec;
+    color: #fff;
 }
 
 .btn-primary {
-    color: #fff;
+    color: #fff !important;
     background-color: #2e2e2e;
 }
 
-.btn:hover {box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);}
+.btn:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
 
-a {text-decoration: none;}
+a {
+    text-decoration: none;
+}
+
+input {
+    width: 100%;
+    height: 45px;
+    border-radius: 7px;
+    outline: none;
+    border: 0.15rem solid #dbdbdb;
+    padding: 0 1rem 0.1rem;
+    font-size: 18px;
+}
 
 /* Navbar */
 .navbar {
@@ -36,13 +52,15 @@ a {text-decoration: none;}
     z-index: 100;
 }
 
-.logo a{
+.logo a {
     font-size: 2rem;
     font-weight: 600;
     color: #fff;
 }
 
-.navbar a {color: #212121;}
+.navbar a {
+    color: #212121;
+}
 
 .nav-menu {
     margin-left: 2.5rem;
@@ -58,11 +76,17 @@ a {text-decoration: none;}
     height: 100%;
 }
 
-.nav-menu .nav-list a {padding: 1.9rem 1rem;}
+.nav-menu .nav-list a {
+    padding: 1.9rem 1rem;
+}
 
-.nav-menu .nav-list.active {border-bottom: 4px solid black;}
+.nav-menu .nav-list.active {
+    border-bottom: 4px solid black;
+}
 
-.nav-menu .nav-list a:hover {border-bottom: 4px solid black;}
+.nav-menu .nav-list a:hover {
+    border-bottom: 4px solid black;
+}
 
 .login {
     display: flex;
@@ -86,14 +110,14 @@ a {text-decoration: none;}
     position: relative;
 }
 
-.slider > img {
+.slider>img {
     height: 100%;
     width: 100%;
-    object-fit:cover;
+    object-fit: cover;
     border-radius: 25px;
 }
 
-.title { 
+.title {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -105,13 +129,14 @@ a {text-decoration: none;}
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.title > .judul {
+.title>.judul {
     font-size: 5vw;
     font-weight: 700;
     text-align: center;
     line-height: 3rem;
 }
-.judul > span  {
+
+.judul>span {
     font-size: 1.5vw;
     font-weight: 300;
 }
@@ -124,13 +149,23 @@ a {text-decoration: none;}
 }
 
 @-webkit-keyframes fade {
-    from {opacity: .5} 
-    to {opacity: 1}
+    from {
+        opacity: .5
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes fade {
-    from {opacity: .5} 
-    to {opacity: 1}
+    from {
+        opacity: .5
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 /* Footer */
@@ -144,7 +179,9 @@ a {text-decoration: none;}
     color: #fff;
 }
 
-.ft-content {max-width: 17vw;}
+.ft-content {
+    max-width: 17vw;
+}
 
 .ft-desc {
     margin-top: 2rem;
@@ -153,9 +190,13 @@ a {text-decoration: none;}
     display: block;
 }
 
-.ft-desc.link {margin-top: 15px;}
+.ft-desc.link {
+    margin-top: 15px;
+}
 
-.media-sosial {margin-top: 2rem;}
+.media-sosial {
+    margin-top: 2rem;
+}
 
 .media-sosial .bi {
     margin-right: 1rem;
@@ -178,3 +219,55 @@ a {text-decoration: none;}
     color: #ccc;
 }
 
+.login-page {
+    display: flex;
+    height: 100vh;
+}
+
+.login-page>.login-menu {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-page>img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login-menu>.input {
+    width: 60%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input>.input-grid {
+    width: 70%;
+    text-align: center;
+    display: grid;
+    gap: 2rem;
+}
+
+.input-grid>.group-input>input {
+    margin-top: 1rem;
+}
+
+.login-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-menu a {
+    text-decoration: none;
+    color: #212121;
+}
+
+.login-menu a:visited {
+    color: #212121;
+}
